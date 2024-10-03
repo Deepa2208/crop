@@ -1,0 +1,904 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1184</width>
+    <height>747</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;ui version=&quot;4.0&quot;&gt;
+ &lt;widget name=&quot;__qt_fake_top_level&quot;&gt;
+  &lt;widget class=&quot;QToolButton&quot; name=&quot;startButton&quot;&gt;
+   &lt;property name=&quot;geometry&quot;&gt;
+    &lt;rect&gt;
+     &lt;x&gt;230&lt;/x&gt;
+     &lt;y&gt;440&lt;/y&gt;
+     &lt;width&gt;80&lt;/width&gt;
+     &lt;height&gt;80&lt;/height&gt;
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;styleSheet&quot;&gt;
+    &lt;string notr=&quot;true&quot;&gt;border: no-border;&lt;/string&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;text&quot;&gt;
+    &lt;string&gt;...&lt;/string&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;icon&quot;&gt;
+    &lt;iconset&gt;
+     &lt;normaloff&gt;C:/Users/91969/Desktop/arecanut_img_processing-main/GUI/Images/play.png&lt;/normaloff&gt;C:/Users/91969/Desktop/arecanut_img_processing-main/GUI/Images/play.png&lt;/iconset&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;iconSize&quot;&gt;
+    &lt;size&gt;
+     &lt;width&gt;80&lt;/width&gt;
+     &lt;height&gt;80&lt;/height&gt;
+    &lt;/size&gt;
+   &lt;/property&gt;
+  &lt;/widget&gt;
+  &lt;widget class=&quot;QLCDNumber&quot; name=&quot;lcdVol&quot;&gt;
+   &lt;property name=&quot;geometry&quot;&gt;
+    &lt;rect&gt;
+     &lt;x&gt;830&lt;/x&gt;
+     &lt;y&gt;60&lt;/y&gt;
+     &lt;width&gt;200&lt;/width&gt;
+     &lt;height&gt;60&lt;/height&gt;
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;styleSheet&quot;&gt;
+    &lt;string notr=&quot;true&quot;&gt;color: rgb(255, 85, 0);
+border: 5px solid white;&lt;/string&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;value&quot; stdset=&quot;0&quot;&gt;
+    &lt;double&gt;15.000000000000000&lt;/double&gt;
+   &lt;/property&gt;
+  &lt;/widget&gt;
+  &lt;widget class=&quot;QLineEdit&quot; name=&quot;lineEdit&quot;&gt;
+   &lt;property name=&quot;geometry&quot;&gt;
+    &lt;rect&gt;
+     &lt;x&gt;760&lt;/x&gt;
+     &lt;y&gt;140&lt;/y&gt;
+     &lt;width&gt;300&lt;/width&gt;
+     &lt;height&gt;4&lt;/height&gt;
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;styleSheet&quot;&gt;
+    &lt;string notr=&quot;true&quot;&gt;background-color: rgb(255, 85, 0);
+&lt;/string&gt;
+   &lt;/property&gt;
+  &lt;/widget&gt;
+  &lt;widget class=&quot;QToolButton&quot; name=&quot;shutDownButton_2&quot;&gt;
+   &lt;property name=&quot;geometry&quot;&gt;
+    &lt;rect&gt;
+     &lt;x&gt;960&lt;/x&gt;
+     &lt;y&gt;480&lt;/y&gt;
+     &lt;width&gt;50&lt;/width&gt;
+     &lt;height&gt;50&lt;/height&gt;
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;styleSheet&quot;&gt;
+    &lt;string notr=&quot;true&quot;&gt;border: no-border;&lt;/string&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;text&quot;&gt;
+    &lt;string&gt;...&lt;/string&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;icon&quot;&gt;
+    &lt;iconset&gt;
+     &lt;normaloff&gt;C:/Users/91969/Desktop/arecanut_img_processing-main/GUI/Images/shutdown.png&lt;/normaloff&gt;C:/Users/91969/Desktop/arecanut_img_processing-main/GUI/Images/shutdown.png&lt;/iconset&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;iconSize&quot;&gt;
+    &lt;size&gt;
+     &lt;width&gt;80&lt;/width&gt;
+     &lt;height&gt;80&lt;/height&gt;
+    &lt;/size&gt;
+   &lt;/property&gt;
+  &lt;/widget&gt;
+  &lt;widget class=&quot;QLCDNumber&quot; name=&quot;lcdDensity&quot;&gt;
+   &lt;property name=&quot;geometry&quot;&gt;
+    &lt;rect&gt;
+     &lt;x&gt;830&lt;/x&gt;
+     &lt;y&gt;380&lt;/y&gt;
+     &lt;width&gt;200&lt;/width&gt;
+     &lt;height&gt;60&lt;/height&gt;
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;styleSheet&quot;&gt;
+    &lt;string notr=&quot;true&quot;&gt;color: rgb(255, 85, 0);
+border: 5px solid white;&lt;/string&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;value&quot; stdset=&quot;0&quot;&gt;
+    &lt;double&gt;10.000000000000000&lt;/double&gt;
+   &lt;/property&gt;
+  &lt;/widget&gt;
+  &lt;widget class=&quot;QLineEdit&quot; name=&quot;lineEdit_2&quot;&gt;
+   &lt;property name=&quot;geometry&quot;&gt;
+    &lt;rect&gt;
+     &lt;x&gt;760&lt;/x&gt;
+     &lt;y&gt;320&lt;/y&gt;
+     &lt;width&gt;300&lt;/width&gt;
+     &lt;height&gt;4&lt;/height&gt;
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;styleSheet&quot;&gt;
+    &lt;string notr=&quot;true&quot;&gt;background-color: rgb(255, 85, 0);
+&lt;/string&gt;
+   &lt;/property&gt;
+  &lt;/widget&gt;
+  &lt;widget class=&quot;QFrame&quot; name=&quot;frame&quot;&gt;
+   &lt;property name=&quot;geometry&quot;&gt;
+    &lt;rect&gt;
+     &lt;x&gt;60&lt;/x&gt;
+     &lt;y&gt;150&lt;/y&gt;
+     &lt;width&gt;671&lt;/width&gt;
+     &lt;height&gt;271&lt;/height&gt;
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;styleSheet&quot;&gt;
+    &lt;string notr=&quot;true&quot;&gt;border: 5px solid rgb(255, 85, 0);
+border-radius: 10px;
+background-color: rgb(255, 255, 255);&lt;/string&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;frameShape&quot;&gt;
+    &lt;enum&gt;QFrame::StyledPanel&lt;/enum&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;frameShadow&quot;&gt;
+    &lt;enum&gt;QFrame::Raised&lt;/enum&gt;
+   &lt;/property&gt;
+  &lt;/widget&gt;
+  &lt;widget class=&quot;Line&quot; name=&quot;line_4&quot;&gt;
+   &lt;property name=&quot;geometry&quot;&gt;
+    &lt;rect&gt;
+     &lt;x&gt;1060&lt;/x&gt;
+     &lt;y&gt;10&lt;/y&gt;
+     &lt;width&gt;4&lt;/width&gt;
+     &lt;height&gt;530&lt;/height&gt;
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;styleSheet&quot;&gt;
+    &lt;string notr=&quot;true&quot;&gt;background-color: rgb(255, 85, 0);&lt;/string&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;orientation&quot;&gt;
+    &lt;enum&gt;Qt::Vertical&lt;/enum&gt;
+   &lt;/property&gt;
+  &lt;/widget&gt;
+  &lt;widget class=&quot;QToolButton&quot; name=&quot;stoplButton&quot;&gt;
+   &lt;property name=&quot;geometry&quot;&gt;
+    &lt;rect&gt;
+     &lt;x&gt;470&lt;/x&gt;
+     &lt;y&gt;440&lt;/y&gt;
+     &lt;width&gt;80&lt;/width&gt;
+     &lt;height&gt;80&lt;/height&gt;
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;styleSheet&quot;&gt;
+    &lt;string notr=&quot;true&quot;&gt;border: no-border;&lt;/string&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;text&quot;&gt;
+    &lt;string&gt;...&lt;/string&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;icon&quot;&gt;
+    &lt;iconset&gt;
+     &lt;normaloff&gt;C:/Users/91969/Desktop/arecanut_img_processing-main/GUI/Images/stop.png&lt;/normaloff&gt;C:/Users/91969/Desktop/arecanut_img_processing-main/GUI/Images/stop.png&lt;/iconset&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;iconSize&quot;&gt;
+    &lt;size&gt;
+     &lt;width&gt;80&lt;/width&gt;
+     &lt;height&gt;80&lt;/height&gt;
+    &lt;/size&gt;
+   &lt;/property&gt;
+  &lt;/widget&gt;
+  &lt;widget class=&quot;QLineEdit&quot; name=&quot;lineEdit_3&quot;&gt;
+   &lt;property name=&quot;geometry&quot;&gt;
+    &lt;rect&gt;
+     &lt;x&gt;760&lt;/x&gt;
+     &lt;y&gt;460&lt;/y&gt;
+     &lt;width&gt;300&lt;/width&gt;
+     &lt;height&gt;4&lt;/height&gt;
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;styleSheet&quot;&gt;
+    &lt;string notr=&quot;true&quot;&gt;background-color: rgb(255, 85, 0);
+&lt;/string&gt;
+   &lt;/property&gt;
+  &lt;/widget&gt;
+  &lt;widget class=&quot;QPushButton&quot; name=&quot;pushButton&quot;&gt;
+   &lt;property name=&quot;geometry&quot;&gt;
+    &lt;rect&gt;
+     &lt;x&gt;920&lt;/x&gt;
+     &lt;y&gt;277&lt;/y&gt;
+     &lt;width&gt;80&lt;/width&gt;
+     &lt;height&gt;30&lt;/height&gt;
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;font&quot;&gt;
+    &lt;font&gt;
+     &lt;family&gt;Arial&lt;/family&gt;
+     &lt;pointsize&gt;12&lt;/pointsize&gt;
+     &lt;weight&gt;75&lt;/weight&gt;
+     &lt;bold&gt;true&lt;/bold&gt;
+    &lt;/font&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;styleSheet&quot;&gt;
+    &lt;string notr=&quot;true&quot;&gt;
+
+QPushButton
+        {
+            color: white;
+             background-color: rgb(255, 85, 0);
+            border: 5px rgb(255, 85, 0) solid;
+            font-weight: bold;
+            outline: none;
+        }
+        QPushButton:hover{
+            border: 1px #C6C6C6 solid;
+            color: #fff;
+            background-color: rgb(0, 255, 255) ;
+        }&lt;/string&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;text&quot;&gt;
+    &lt;string&gt;Tare&lt;/string&gt;
+   &lt;/property&gt;
+  &lt;/widget&gt;
+  &lt;widget class=&quot;QLabel&quot; name=&quot;label&quot;&gt;
+   &lt;property name=&quot;geometry&quot;&gt;
+    &lt;rect&gt;
+     &lt;x&gt;800&lt;/x&gt;
+     &lt;y&gt;270&lt;/y&gt;
+     &lt;width&gt;51&lt;/width&gt;
+     &lt;height&gt;41&lt;/height&gt;
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;font&quot;&gt;
+    &lt;font&gt;
+     &lt;family&gt;Arial&lt;/family&gt;
+     &lt;pointsize&gt;20&lt;/pointsize&gt;
+     &lt;weight&gt;75&lt;/weight&gt;
+     &lt;bold&gt;true&lt;/bold&gt;
+    &lt;/font&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;styleSheet&quot;&gt;
+    &lt;string notr=&quot;true&quot;&gt;color: rgb(255, 85, 0);&lt;/string&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;text&quot;&gt;
+    &lt;string&gt;gm.&lt;/string&gt;
+   &lt;/property&gt;
+  &lt;/widget&gt;
+  &lt;widget class=&quot;QLabel&quot; name=&quot;label_6&quot;&gt;
+   &lt;property name=&quot;geometry&quot;&gt;
+    &lt;rect&gt;
+     &lt;x&gt;310&lt;/x&gt;
+     &lt;y&gt;100&lt;/y&gt;
+     &lt;width&gt;201&lt;/width&gt;
+     &lt;height&gt;31&lt;/height&gt;
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;font&quot;&gt;
+    &lt;font&gt;
+     &lt;family&gt;Arial&lt;/family&gt;
+     &lt;pointsize&gt;16&lt;/pointsize&gt;
+     &lt;weight&gt;75&lt;/weight&gt;
+     &lt;bold&gt;true&lt;/bold&gt;
+    &lt;/font&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;styleSheet&quot;&gt;
+    &lt;string notr=&quot;true&quot;&gt;color: rgb(255, 255, 255);&lt;/string&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;text&quot;&gt;
+    &lt;string&gt;Camera View&lt;/string&gt;
+   &lt;/property&gt;
+  &lt;/widget&gt;
+  &lt;widget class=&quot;QLabel&quot; name=&quot;label_2&quot;&gt;
+   &lt;property name=&quot;geometry&quot;&gt;
+    &lt;rect&gt;
+     &lt;x&gt;780&lt;/x&gt;
+     &lt;y&gt;20&lt;/y&gt;
+     &lt;width&gt;81&lt;/width&gt;
+     &lt;height&gt;31&lt;/height&gt;
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;font&quot;&gt;
+    &lt;font&gt;
+     &lt;family&gt;Arial&lt;/family&gt;
+     &lt;pointsize&gt;14&lt;/pointsize&gt;
+     &lt;weight&gt;75&lt;/weight&gt;
+     &lt;bold&gt;true&lt;/bold&gt;
+    &lt;/font&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;styleSheet&quot;&gt;
+    &lt;string notr=&quot;true&quot;&gt;color: rgb(255, 255, 255);&lt;/string&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;text&quot;&gt;
+    &lt;string&gt;Volume&lt;/string&gt;
+   &lt;/property&gt;
+  &lt;/widget&gt;
+  &lt;widget class=&quot;QLabel&quot; name=&quot;label_4&quot;&gt;
+   &lt;property name=&quot;geometry&quot;&gt;
+    &lt;rect&gt;
+     &lt;x&gt;780&lt;/x&gt;
+     &lt;y&gt;340&lt;/y&gt;
+     &lt;width&gt;101&lt;/width&gt;
+     &lt;height&gt;31&lt;/height&gt;
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;font&quot;&gt;
+    &lt;font&gt;
+     &lt;family&gt;Arial&lt;/family&gt;
+     &lt;pointsize&gt;14&lt;/pointsize&gt;
+     &lt;weight&gt;75&lt;/weight&gt;
+     &lt;bold&gt;true&lt;/bold&gt;
+    &lt;/font&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;styleSheet&quot;&gt;
+    &lt;string notr=&quot;true&quot;&gt;color: rgb(255, 255, 255);&lt;/string&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;text&quot;&gt;
+    &lt;string&gt;Desnsity&lt;/string&gt;
+   &lt;/property&gt;
+  &lt;/widget&gt;
+  &lt;widget class=&quot;Line&quot; name=&quot;line&quot;&gt;
+   &lt;property name=&quot;geometry&quot;&gt;
+    &lt;rect&gt;
+     &lt;x&gt;20&lt;/x&gt;
+     &lt;y&gt;10&lt;/y&gt;
+     &lt;width&gt;4&lt;/width&gt;
+     &lt;height&gt;530&lt;/height&gt;
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;styleSheet&quot;&gt;
+    &lt;string notr=&quot;true&quot;&gt;background-color: rgb(255, 85, 0);&lt;/string&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;orientation&quot;&gt;
+    &lt;enum&gt;Qt::Vertical&lt;/enum&gt;
+   &lt;/property&gt;
+  &lt;/widget&gt;
+  &lt;widget class=&quot;Line&quot; name=&quot;line_5&quot;&gt;
+   &lt;property name=&quot;geometry&quot;&gt;
+    &lt;rect&gt;
+     &lt;x&gt;760&lt;/x&gt;
+     &lt;y&gt;10&lt;/y&gt;
+     &lt;width&gt;4&lt;/width&gt;
+     &lt;height&gt;530&lt;/height&gt;
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;styleSheet&quot;&gt;
+    &lt;string notr=&quot;true&quot;&gt;background-color: rgb(255, 85, 0);&lt;/string&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;orientation&quot;&gt;
+    &lt;enum&gt;Qt::Vertical&lt;/enum&gt;
+   &lt;/property&gt;
+  &lt;/widget&gt;
+  &lt;widget class=&quot;QLabel&quot; name=&quot;label_5&quot;&gt;
+   &lt;property name=&quot;geometry&quot;&gt;
+    &lt;rect&gt;
+     &lt;x&gt;80&lt;/x&gt;
+     &lt;y&gt;40&lt;/y&gt;
+     &lt;width&gt;631&lt;/width&gt;
+     &lt;height&gt;41&lt;/height&gt;
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;font&quot;&gt;
+    &lt;font&gt;
+     &lt;family&gt;Arial&lt;/family&gt;
+     &lt;pointsize&gt;20&lt;/pointsize&gt;
+     &lt;weight&gt;75&lt;/weight&gt;
+     &lt;bold&gt;true&lt;/bold&gt;
+    &lt;/font&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;styleSheet&quot;&gt;
+    &lt;string notr=&quot;true&quot;&gt;color: rgb(255, 85, 0);&lt;/string&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;text&quot;&gt;
+    &lt;string&gt;DENSITY BASED ARECA NUT SORTING&lt;/string&gt;
+   &lt;/property&gt;
+  &lt;/widget&gt;
+  &lt;widget class=&quot;Line&quot; name=&quot;line_2&quot;&gt;
+   &lt;property name=&quot;geometry&quot;&gt;
+    &lt;rect&gt;
+     &lt;x&gt;20&lt;/x&gt;
+     &lt;y&gt;540&lt;/y&gt;
+     &lt;width&gt;1042&lt;/width&gt;
+     &lt;height&gt;4&lt;/height&gt;
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;styleSheet&quot;&gt;
+    &lt;string notr=&quot;true&quot;&gt;background-color: rgb(255, 85, 0);&lt;/string&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;orientation&quot;&gt;
+    &lt;enum&gt;Qt::Horizontal&lt;/enum&gt;
+   &lt;/property&gt;
+  &lt;/widget&gt;
+  &lt;widget class=&quot;Line&quot; name=&quot;line_3&quot;&gt;
+   &lt;property name=&quot;enabled&quot;&gt;
+    &lt;bool&gt;false&lt;/bool&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;geometry&quot;&gt;
+    &lt;rect&gt;
+     &lt;x&gt;20&lt;/x&gt;
+     &lt;y&gt;10&lt;/y&gt;
+     &lt;width&gt;1042&lt;/width&gt;
+     &lt;height&gt;4&lt;/height&gt;
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;autoFillBackground&quot;&gt;
+    &lt;bool&gt;false&lt;/bool&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;styleSheet&quot;&gt;
+    &lt;string notr=&quot;true&quot;&gt;background-color: rgb(255, 85, 0);&lt;/string&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;orientation&quot;&gt;
+    &lt;enum&gt;Qt::Horizontal&lt;/enum&gt;
+   &lt;/property&gt;
+  &lt;/widget&gt;
+  &lt;widget class=&quot;QLCDNumber&quot; name=&quot;lcdWt&quot;&gt;
+   &lt;property name=&quot;geometry&quot;&gt;
+    &lt;rect&gt;
+     &lt;x&gt;830&lt;/x&gt;
+     &lt;y&gt;197&lt;/y&gt;
+     &lt;width&gt;200&lt;/width&gt;
+     &lt;height&gt;60&lt;/height&gt;
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;styleSheet&quot;&gt;
+    &lt;string notr=&quot;true&quot;&gt;color: rgb(255, 85, 0);
+border: 5px solid white;&lt;/string&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;value&quot; stdset=&quot;0&quot;&gt;
+    &lt;double&gt;10.000000000000000&lt;/double&gt;
+   &lt;/property&gt;
+  &lt;/widget&gt;
+  &lt;widget class=&quot;QLabel&quot; name=&quot;label_3&quot;&gt;
+   &lt;property name=&quot;geometry&quot;&gt;
+    &lt;rect&gt;
+     &lt;x&gt;780&lt;/x&gt;
+     &lt;y&gt;157&lt;/y&gt;
+     &lt;width&gt;81&lt;/width&gt;
+     &lt;height&gt;31&lt;/height&gt;
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;font&quot;&gt;
+    &lt;font&gt;
+     &lt;family&gt;Arial&lt;/family&gt;
+     &lt;pointsize&gt;14&lt;/pointsize&gt;
+     &lt;weight&gt;75&lt;/weight&gt;
+     &lt;bold&gt;true&lt;/bold&gt;
+    &lt;/font&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;styleSheet&quot;&gt;
+    &lt;string notr=&quot;true&quot;&gt;color: rgb(255, 255, 255);&lt;/string&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;text&quot;&gt;
+    &lt;string&gt;Weight&lt;/string&gt;
+   &lt;/property&gt;
+  &lt;/widget&gt;
+  &lt;widget class=&quot;QToolButton&quot; name=&quot;settingButton&quot;&gt;
+   &lt;property name=&quot;geometry&quot;&gt;
+    &lt;rect&gt;
+     &lt;x&gt;800&lt;/x&gt;
+     &lt;y&gt;480&lt;/y&gt;
+     &lt;width&gt;50&lt;/width&gt;
+     &lt;height&gt;55&lt;/height&gt;
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;styleSheet&quot;&gt;
+    &lt;string notr=&quot;true&quot;&gt;border: no-border;&lt;/string&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;text&quot;&gt;
+    &lt;string&gt;...&lt;/string&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;icon&quot;&gt;
+    &lt;iconset&gt;
+     &lt;normaloff&gt;C:/Users/91969/Desktop/arecanut_img_processing-main/GUI/Images/settings_prev.png&lt;/normaloff&gt;C:/Users/91969/Desktop/arecanut_img_processing-main/GUI/Images/settings_prev.png&lt;/iconset&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;iconSize&quot;&gt;
+    &lt;size&gt;
+     &lt;width&gt;80&lt;/width&gt;
+     &lt;height&gt;80&lt;/height&gt;
+    &lt;/size&gt;
+   &lt;/property&gt;
+  &lt;/widget&gt;
+ &lt;/widget&gt;
+ &lt;resources/&gt;
+&lt;/ui&gt;
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QFrame" name="frame">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <layout class="QGridLayout" name="_2" rowstretch="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0" columnstretch="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0">
+         <property name="sizeConstraint">
+          <enum>QLayout::SetMinimumSize</enum>
+         </property>
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <item row="24" column="8" colspan="11">
+          <layout class="QHBoxLayout" name="horizontalLayout_3">
+           <item>
+            <widget class="QToolButton" name="stoplButton">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">border: no-border;</string>
+             </property>
+             <property name="text">
+              <string>...</string>
+             </property>
+             <property name="icon">
+              <iconset>
+               <normaloff>C:/Users/91969/Desktop/arecanut_img_processing-main/GUI/Images/stop.png</normaloff>C:/Users/91969/Desktop/arecanut_img_processing-main/GUI/Images/stop.png</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>80</width>
+               <height>80</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QToolButton" name="startButton">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">border: no-border;</string>
+             </property>
+             <property name="text">
+              <string>...</string>
+             </property>
+             <property name="icon">
+              <iconset>
+               <normaloff>C:/Users/91969/Desktop/arecanut_img_processing-main/GUI/Images/play.png</normaloff>C:/Users/91969/Desktop/arecanut_img_processing-main/GUI/Images/play.png</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>80</width>
+               <height>80</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item row="18" column="28" rowspan="3" colspan="3">
+          <widget class="QLCDNumber" name="lcdDensity">
+           <property name="enabled">
+            <bool>true</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(255, 85, 0);
+border: 5px solid white;
+border-radius: 10px;
+</string>
+           </property>
+           <property name="inputMethodHints">
+            <set>Qt::ImhFormattedNumbersOnly|Qt::ImhLowercaseOnly|Qt::ImhUppercaseOnly</set>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::HLine</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Sunken</enum>
+           </property>
+           <property name="lineWidth">
+            <number>4</number>
+           </property>
+           <property name="midLineWidth">
+            <number>3</number>
+           </property>
+           <property name="smallDecimalPoint">
+            <bool>false</bool>
+           </property>
+           <property name="value" stdset="0">
+            <double>0.000000000000000</double>
+           </property>
+           <property name="intValue" stdset="0">
+            <number>0</number>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="5" rowspan="3" colspan="18">
+          <widget class="QLabel" name="label_5">
+           <property name="font">
+            <font>
+             <family>Arial</family>
+             <pointsize>20</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(85, 170, 0);</string>
+           </property>
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:28pt;&quot;&gt;PLASTIC DETECTION&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+         </item>
+         <item row="15" column="27" colspan="5">
+          <widget class="QLineEdit" name="lineEdit_2">
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>4</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 85, 0);
+</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="28">
+          <widget class="QLabel" name="label_2">
+           <property name="font">
+            <font>
+             <family>Arial</family>
+             <pointsize>14</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(255, 255, 255);</string>
+           </property>
+           <property name="text">
+            <string>Plastic</string>
+           </property>
+          </widget>
+         </item>
+         <item row="7" column="27" colspan="5">
+          <widget class="QLineEdit" name="lineEdit_3">
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>4</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 85, 0);
+</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1" colspan="31">
+          <widget class="Line" name="line_3">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="28" column="0" colspan="33">
+          <widget class="Line" name="line_4">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="7" column="2" rowspan="15" colspan="23">
+          <widget class="QFrame" name="frame_2">
+           <property name="styleSheet">
+            <string notr="true">border: 5px solid rgb(255, 85, 0);
+border-radius: 10px;
+background-color: rgb(255, 255, 255);</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="9" column="28">
+          <widget class="QLabel" name="label_3">
+           <property name="font">
+            <font>
+             <family>Arial</family>
+             <pointsize>14</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(255, 255, 255);</string>
+           </property>
+           <property name="text">
+            <string>Not Plastic</string>
+           </property>
+          </widget>
+         </item>
+         <item row="24" column="27" colspan="5" alignment="Qt::AlignHCenter">
+          <widget class="QToolButton" name="shutDownButton_2">
+           <property name="styleSheet">
+            <string notr="true">border: no-border;</string>
+           </property>
+           <property name="text">
+            <string>...</string>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>C:/Users/91969/Desktop/arecanut_img_processing-main/GUI/Images/shutdown.png</normaloff>C:/Users/91969/Desktop/arecanut_img_processing-main/GUI/Images/shutdown.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>80</width>
+             <height>80</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="32" rowspan="26">
+          <widget class="Line" name="line_8">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="22" column="27" colspan="5">
+          <widget class="QLineEdit" name="lineEdit">
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>4</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 85, 0);
+</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="28" rowspan="3" colspan="3">
+          <widget class="QLCDNumber" name="lcdVol">
+           <property name="styleSheet">
+            <string notr="true">color: rgb(255, 85, 0);
+border: 5px solid rgb(57, 4, 162);
+border-radius: 10px;</string>
+           </property>
+           <property name="value" stdset="0">
+            <double>0.000000000000000</double>
+           </property>
+           <property name="intValue" stdset="0">
+            <number>0</number>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="4" colspan="20" alignment="Qt::AlignHCenter">
+          <widget class="QLabel" name="label_6">
+           <property name="font">
+            <font>
+             <family>Arial</family>
+             <pointsize>16</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(255, 255, 255);</string>
+           </property>
+           <property name="text">
+            <string>Camera View</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0" rowspan="26">
+          <widget class="Line" name="line_6">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="26" rowspan="25">
+          <widget class="Line" name="line_5">
+           <property name="maximumSize">
+            <size>
+             <width>3</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="10" column="28" rowspan="3" colspan="3">
+          <widget class="QLCDNumber" name="lcdWt">
+           <property name="styleSheet">
+            <string notr="true">color: rgb(255, 85, 0);
+border: 5px solid white;
+border-radius: 10px;</string>
+           </property>
+           <property name="value" stdset="0">
+            <double>0.000000000000000</double>
+           </property>
+           <property name="intValue" stdset="0">
+            <number>0</number>
+           </property>
+          </widget>
+         </item>
+         <item row="17" column="28" colspan="2">
+          <widget class="QLabel" name="label_4">
+           <property name="font">
+            <font>
+             <family>Arial</family>
+             <pointsize>14</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(255, 255, 255);</string>
+           </property>
+           <property name="text">
+            <string>Result</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
